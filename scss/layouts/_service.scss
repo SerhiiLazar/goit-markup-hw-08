@@ -19,6 +19,14 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    @include mq(mobile-only) {
+        width: 480px;
+        min-height: 400px;
+        background-size: auto auto;
+
+
+    }
 }
 
 .service__title {
@@ -31,5 +39,10 @@
     color: var(--white);
 
     margin-bottom: 30px ;
+
+    @include mq(mobile-only) {
+        font-size: 26px;
+        line-height: 1.6;
+    }
 }
     

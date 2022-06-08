@@ -302,6 +302,14 @@ body {
   background-position: center;
 }
 
+@media screen and (max-width: 767.98px) {
+  .service {
+    width: 480px;
+    min-height: 400px;
+    background-size: auto auto;
+  }
+}
+
 .service__title {
   font-weight: 900;
   font-size: 44px;
@@ -311,6 +319,13 @@ body {
   text-transform: uppercase;
   color: var(--white);
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .service__title {
+    font-size: 26px;
+    line-height: 1.6;
+  }
 }
 
 /* inform */

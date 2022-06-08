@@ -4,7 +4,8 @@
     "sources": [
         "../scss/utils/index.scss",
         "../scss/utils/_vars.scss",
-        "../scss/utils/_visually-hidden.scss"
+        "../scss/utils/_visually-hidden.scss",
+        "../scss/utils/_mixins.scss"
     ],
     "names": [],
     "file": "index.min.css"
