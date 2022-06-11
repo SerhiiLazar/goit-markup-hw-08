@@ -3,36 +3,143 @@
 
 .service {
     max-width: 1600px;
-    min-height: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
 
-    background-image: linear-gradient(
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    
+
+    background-image: url("../images/background/header.jpg"),
+        linear-gradient(
         to right, 
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
-        ), 
-        url("../images/background.jpg");
+        );
+        
+    background-image: -webkit-image-set(url("../images/background/header.jpg") 1x),
+        linear-gradient(
+        to right, 
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+        );
+        
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 
-    @include mq(mobile-only) {
-        width: 480px;
-        min-height: 400px;
-        background-size: auto auto;
-
-
+    @include mq(retina) {
+        background-image: 
+        linear-gradient(
+        to right, 
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/background/header@2x.jpg");
+        
+        
+    background-image: 
+        linear-gradient(
+        to right, 
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+        ),
+        -webkit-image-set(url("../images/background/header@2x.jpg") 2x);
+        
     }
+
+    // Фонове зображення для планшету
+
+    @include mq(tablet) {
+        background-image: url("../images/background/header_tab.jpg"),
+        linear-gradient(
+        to right, 
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+        );
+        
+    background-image: -webkit-image-set(url("../images/background/header_tab.jpg") 1x),
+        linear-gradient(
+        to right, 
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+        );
+
+        @include mq(retina) {
+            background-image: 
+            linear-gradient(
+            to right, 
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+            ),
+            url("../images/background/header_tab@2x.jpg");
+            
+            
+        background-image: 
+            linear-gradient(
+            to right, 
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+            ),
+            -webkit-image-set(url("../images/background/header_tab@2x.jpg") 2x);
+            
+        }
+    }
+
+    // Фонове зображення для десктопу
+
+    @include mq(desktop) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+
+        background-image:
+        linear-gradient(
+        to right, 
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+        ), 
+        url("../images/background/background.jpg");
+        
+        
+        background-image: 
+        linear-gradient(
+        to right, 
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+        ),
+        -webkit-image-set(url("../images/background/background.jpg") 1x);
+
+        @include mq(retina) {
+            background-image: 
+            linear-gradient(
+            to right, 
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+            ),
+            url("../images/background/background@2x.jpg");
+            
+            
+        background-image: 
+            linear-gradient(
+            to right, 
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+            ),
+            -webkit-image-set(url("../images/background/background@2x.jpg") 2x);
+            
+        }
+    }
+    
+    
+    
 }
+
+
 
 .service__title {
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.6;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -40,9 +147,10 @@
 
     margin-bottom: 30px ;
 
-    @include mq(mobile-only) {
-        font-size: 26px;
-        line-height: 1.6;
+    @include mq(desktop) {
+        font-size: 44px;
+        line-height: 1.36;
     }
+    
 }
     
