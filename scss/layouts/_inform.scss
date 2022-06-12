@@ -6,52 +6,40 @@
     margin: 0;
     margin: 0 auto;
 
+
+
     @include mq(tablet) {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         min-width: 768px;
-
+        margin: -15px;
         
     }
 
     @include mq(desktop) {
-        display: flex;
-        flex-wrap: wrap;
-        min-width: 1280px;
-       
+        flex-wrap: nowrap;
+        min-width: 1200px;
+        margin: -15px;
     }
     
     
 }
 
 .inform__item {
-
     margin-bottom: 30px;    
-   
-    
 
     @include mq(tablet) {
+        flex-basis: calc((100% - 4 * 15px) / 2);
+        margin: 15px;
         
-        flex-basis: calc((100% - 2 * 30px) / 2);
-        margin-right: 30px;
-        &:nth-child(2n) {
-            margin-right: 0;
-        }
     }
 
     @include mq(desktop) {
-
-        flex-basis: calc((100% - 3 * 30px) / 4);
-        margin-right: 30px;
+        flex-basis: calc((100% - 30px) / 4);
+        margin-bottom: 0;
+        margin: 15px;
         
-        &:nth-child(2n) {
-            margin-right: 30px;
-        }
-
-        &:last-child {
-            margin-right: 0;
-        }
     }
 }    
     
