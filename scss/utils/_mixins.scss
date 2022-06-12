@@ -39,3 +39,28 @@
       }
     }
   }
+
+
+
+  @mixin fonts($fw, $fs, $lh, $ls, $tt: false) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: setLineHeight($lh, $fs);
+    letter-spacing: $ls;
+  
+    @if $tt {
+      text-transform: $tt;
+    }
+  }
+  
+  // Calculating line-height value to multiplier
+  @function setLineHeight($lh, $fs) {
+    $lh-no-units: strip-unit($lh);
+    $fs-no-units: strip-unit($fs);
+  
+    $lh-value: $lh-no-units / $fs-no-units;
+  
+    $line-height: decimal-round($lh-value, 2);
+  
+    @return $line-height;
+  }
