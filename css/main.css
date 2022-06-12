@@ -69,7 +69,13 @@ a {
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
   }
 }
 
@@ -372,7 +378,18 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    max-width: 768px;
+    min-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .inform__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    min-width: 1280px;
   }
 }
 
@@ -382,8 +399,23 @@ body {
 
 @media screen and (min-width: 768px) {
   .inform__item {
-    -ms-flex-preferred-size: calc(100% / 2);
-        flex-basis: calc(100% / 2);
+    -ms-flex-preferred-size: calc((100% - 2 * 30px) / 2);
+        flex-basis: calc((100% - 2 * 30px) / 2);
+    margin-right: 30px;
+  }
+  .inform__item:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .inform__item {
+    -ms-flex-preferred-size: calc((100% - 3 * 30px) / 4);
+        flex-basis: calc((100% - 3 * 30px) / 4);
+    margin-right: 30px;
+  }
+  .inform__item:nth-child(2n) {
+    margin-right: 30px;
   }
   .inform__item:last-child {
     margin-right: 0;
@@ -406,12 +438,6 @@ body {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 768px) {
-  .inform__icons {
-    max-width: 354px;
-  }
-}
-
 .inform__title {
   font-family: 'Roboto';
   font-style: normal;
@@ -424,8 +450,13 @@ body {
   margin-bottom: 10px;
 }
 
+@media screen and (min-width: 768px) {
+  .inform__title {
+    text-align: start;
+  }
+}
+
 .inform__text {
-  text-align: center;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--text);
