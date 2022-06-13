@@ -521,8 +521,10 @@ body {
 }
 
 .team__list {
+  max-width: 480px;
   padding: 0;
   margin: 0;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -535,11 +537,13 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .team__list {
+    max-width: 1200px;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
@@ -554,7 +558,7 @@ body {
   margin-bottom: 30px;
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (min-width: 480px) {
   .team__item:not(:last-child) {
     margin-bottom: 30px;
   }
