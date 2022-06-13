@@ -521,10 +521,8 @@ body {
 }
 
 .team__list {
-  max-width: 480px;
   padding: 0;
   margin: 0;
-  margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -559,6 +557,9 @@ body {
 }
 
 @media screen and (min-width: 480px) {
+  .team__item {
+    max-width: 450px;
+  }
   .team__item:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -582,6 +583,20 @@ body {
   }
   .team__item:nth-child(2) {
     margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team__img {
+    width: 354px;
+    height: 374px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__img {
+    width: 270px;
+    height: 260px;
   }
 }
 
