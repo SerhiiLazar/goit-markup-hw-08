@@ -24,7 +24,11 @@ body {
     line-height: 1.16;
     letter-spacing: 0.03em;
 
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    @include mq(desktop) {
+        margin-bottom: 50px;
+    }
 }
         
 
