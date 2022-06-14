@@ -3,18 +3,33 @@
 
 .customers__list {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin:0;
     padding: 0;
     
+    
 }
 
 .customers__item {
     margin-right: 30px;
+    margin-bottom: 30px;
+    
+    
 
-    &:last-child {
+    &:nth-child(2n) {
         margin-right: 0;
+    }
+    &:nth-last-child(-n + 2) {
+        margin-bottom: 0;
+    }
+}
+
+.customers__icon {
+    @include mq(mobile) {
+        width: 210px;
+        height: 92px;
     }
 }
 
