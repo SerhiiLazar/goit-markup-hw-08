@@ -34,7 +34,7 @@
 
     
     @include mq(tablet) {
-        // max-width: 354px;
+        max-width: 354px;
         flex-basis: calc((100% - 30px) / 2);
         margin-right: 30px;
         
@@ -43,7 +43,7 @@
         }
     }
     @include mq(desktop) {
-        
+        max-width: 270px;
         flex-basis: calc((100% - 90px) / 4);
         
         &:nth-child(2) {

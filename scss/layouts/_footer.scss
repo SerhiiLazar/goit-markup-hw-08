@@ -7,9 +7,9 @@
 }
 
 .footer__wrapper {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
+    // display: flex;
+    // align-items: baseline;
+    // justify-content: space-between;
 }
 .footer__about {
     margin-right: 70px;
@@ -42,7 +42,13 @@
 
 /* FOOTER SOCIAL */
 .footer__social {
-    margin-right: 93px;
+    padding: 60px 0;
+    // margin-right: 93px;
+}
+
+.social__mobail {
+    display: block;
+
 }
 
 .footer__title {
@@ -51,6 +57,8 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--white);
+    text-align: center;
 
     margin-bottom: 20px;
 }
+

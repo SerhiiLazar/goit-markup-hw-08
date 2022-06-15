@@ -244,18 +244,6 @@ body {
   background-color: var(--brand-color);
 }
 
-.footer__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .footer__about {
   margin-right: 70px;
 }
@@ -286,7 +274,11 @@ body {
 
 /* FOOTER SOCIAL */
 .footer__social {
-  margin-right: 93px;
+  padding: 60px 0;
+}
+
+.social__mobail {
+  display: block;
 }
 
 .footer__title {
@@ -295,6 +287,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white);
+  text-align: center;
   margin-bottom: 20px;
 }
 
@@ -572,6 +565,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .team__item {
+    max-width: 354px;
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
     margin-right: 30px;
@@ -583,6 +577,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .team__item {
+    max-width: 270px;
     -ms-flex-preferred-size: calc((100% - 90px) / 4);
         flex-basis: calc((100% - 90px) / 4);
   }
@@ -1265,12 +1260,20 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer__form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer__input > [placeholder] {
@@ -1278,13 +1281,12 @@ body {
 }
 
 .footer__input {
-  display: inline-block;
+  display: block;
   background-color: inherit;
   width: 358px;
   height: 50px;
   padding: 15px;
   padding-left: 16px;
-  margin-right: 12px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1294,5 +1296,6 @@ body {
   font-size: 16px;
   line-height: 1.25;
   border-radius: 4px;
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=main.css.map */
