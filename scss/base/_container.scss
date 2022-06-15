@@ -7,6 +7,12 @@
     margin-right: auto;
     /* border: 2px solid tomato; */
 
+    
+
+    @include mq(mobile-only) {
+        max-width: 480px;
+    }
+
     @include mq(tablet) {
         max-width: 768px;
     }

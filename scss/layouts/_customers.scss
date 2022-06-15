@@ -5,7 +5,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items:center;
-    min-width: 480px;
+    
     
     
     margin:0;
@@ -16,12 +16,16 @@
 }
 
 .customers__item {
-    
+    max-width: 480px;
+    width: 100%;
     margin: 15px;
     @include mq(mobile){
         flex-basis: calc((100% - 60px) / 2);
     }
     
+    @include mq(mobile-only) {
+        max-width: 480px;
+    }
 
     @include mq(tablet) {
         flex-basis: calc((100% -  90px) / 3);
