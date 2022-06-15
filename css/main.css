@@ -245,7 +245,7 @@ body {
 }
 
 .footer__about {
-  margin-right: 70px;
+  text-align: center;
 }
 
 .footer__item:nth-child(-n+2) {
