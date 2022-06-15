@@ -19,10 +19,8 @@
     max-width: 480px;
     width: 100%;
     margin: 15px;
-    @include mq(mobile){
-        
-        flex-basis: calc((100% - 60px) / 2);
-    }
+    flex-basis: calc((100% - 60px) / 2);
+    
     
     @include mq(mobile-only) {
         max-width: 480px;
@@ -40,6 +38,21 @@
     }
     
 }
+
+// .customers__icon {
+//     @include mq(mobile) {
+//         width: 210px;
+//         height: 92px;
+//     }
+//     @include mq(tablet) {
+//         width: 226px;
+//     }
+
+//     @include mq(desktop) {
+//         width: 170px;
+       
+//     }
+// }
 
 
 .customers__link {
