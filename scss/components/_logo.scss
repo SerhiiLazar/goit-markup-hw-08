@@ -8,7 +8,13 @@
     letter-spacing: 0.03em;
     color: var(--active);
 
-    margin-right: 93px;
+    
+    @include mq(tablet) {
+        margin-right: 88px;
+    }
+    @include mq(desktop) {
+        margin-right: 93px;
+    }
 
     &--black {
         color: var(--black);
