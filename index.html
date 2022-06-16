@@ -24,13 +24,7 @@
         <div class="container">
             <div class="main">
                 <a class="logo" href="#">Web<span class="logo logo--black">Studio</span></a>
-                <button class="main__btn is-open" type="button" aria-expanded="false" aria-controls="main-container" data-menu-button>
-                    <svg class="main__icons" width="24" height="24" aria-label="навигация открытия окна">
-                        <use class="main__icon--burger" href="./images/icons.svg#icon-menu_burger"></use>
-                        <use class="main__icon--close" href="./images/icons.svg#icon-close-black"></use>
-                    </svg>
-                </button>
-                <div class="main__wrapper is-open" id="main-container" data-menu>
+                <div class="main__wrapper js-menu-container" id="main-container" data-menu>
                     <nav class="main__nav">
                         <ul class="main__list">
                             <li class="main__item"><a class="main__link main__link--active" href="./index.html">Cтудия</a></li>
@@ -38,29 +32,43 @@
                             <li class="main__item"><a class="main__link" href="">Контакты</a></li>
                         </ul>
                     </nav>
-                    <ul class="main__list main__list--contact">
-                        <li class="main__item main__item--contact"><a class="main__link main__link--grey" href="mailto:info@devstudio.com">
-                                <svg class="main__icon" width="16" height="12">
-                                    <use href="./images/icons.svg#icon-envelope"></use>
-                                </svg>
-                                info@devstudio.com
-                            </a>
-                        </li>
-                        <li class="main__item main__item--contact"><a class="main__link main__link--grey" href="tel:+380961111111">
-                                <svg class="main__icon" width="10" height="16">
-                                    <use href="./images/icons.svg#icon-smartphone"></use>
-                                </svg>
-                                +38 096 111 11 11
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="main__social">
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">Twitter</a></li>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">LinkedIn</a></li>
+                    <div class="main__contact">
+                        <ul class="main__list main__list--contact">
+                            <li class="main__item main__item--contact"><a class="main__link main__link--grey-mail" href="mailto:info@devstudio.com">
+                                    <svg class="main__icon" width="16" height="12">
+                                        <use href="./images/icons.svg#icon-envelope"></use>
+                                    </svg>
+                                    info@devstudio.com
+                                </a>
+                            </li>
+                            <li class="main__item main__item--contact"><a class="main__link main__link--grey-tel" href="tel:+380961111111">
+                                    <svg class="main__icon" width="10" height="16">
+                                        <use href="./images/icons.svg#icon-smartphone"></use>
+                                    </svg>
+                                    +38 096 111 11 11
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="main__social-burger social-burger">
+                            <li class="social-burger__item"><a class="social-burger__link" href="#">Instagram</a></li>
+                            <li class="social-burger__item"><a class="social-burger__link" href="#">Twitter</a></li>
+                            <li class="social-burger__item"><a class="social-burger__link" href="#">Facebook</a></li>
+                            <li class="social-burger__item"><a class="social-burger__link" href="#">LinkedIn</a></li>
+                        </ul>
                     </div>
+                    <button class="main__btn js-close-menu" type="button" aria-expanded="false" aria-controls="main-container" data-menu-button>
+                        <svg class="main__icons" width="24" height="24" aria-label="навигация открытия окна">
+                            <use class="main__icon--close" href="./images/icons.svg#icon-close-black"></use>
+                            <!-- <use class="main__icon--close" href="./images/icons.svg#icon-close-black"></use> -->
+                        </svg>
+                    </button>
                 </div>
+                <button class="main__btn js-open-menu" type="button" aria-expanded="false" aria-controls="main-container" data-menu-button>
+                    <svg class="main__icons" width="40" height="40" aria-label="навигация открытия окна">
+                        <use class="main__icon--burger" href="./images/icons.svg#icon-menu_burger"></use>
+                        <!-- <use class="main__icon--close" href="./images/icons.svg#icon-close-black"></use> -->
+                    </svg>
+                </button>
              </div>
         </div>
     </header>
@@ -496,6 +504,12 @@
             </div>
         </div>
     </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/burger-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
