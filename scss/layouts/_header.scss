@@ -48,6 +48,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        width: 100%;
     }
 }
 
@@ -278,6 +279,7 @@
 
 .social-burger {
     display: flex;
+    flex-wrap: wrap;
     padding: 0;
     margin: 0;
     
@@ -304,6 +306,7 @@
             height: 22px;
             border: 1px solid #212121;
             opacity: 0.2;
+            
         }
     }
 
