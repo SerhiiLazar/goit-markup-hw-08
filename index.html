@@ -23,30 +23,45 @@
     <header class="header">
         <div class="container">
             <div class="main">
-                <nav class="main__nav">
-                    <a class="logo" href="#">Web<span class="logo logo--black">Studio</span></a>
-                    <ul class="main__list">
-                        <li class="main__item"><a class="main__link main__link--active" href="./index.html">Cтудия</a></li>
-                        <li class="main__item"><a class="main__link" href="./portfolio.html">Портфолио</a></li>
-                        <li class="main__item"><a class="main__link" href="">Контакты</a></li>
+                <a class="logo" href="#">Web<span class="logo logo--black">Studio</span></a>
+                <button class="main__btn is-open" type="button" aria-expanded="false" aria-controls="main-container" data-menu-button>
+                    <svg class="main__icons" width="24" height="24" aria-label="навигация открытия окна">
+                        <use class="main__icon--burger" href="./images/icons.svg#icon-menu_burger"></use>
+                        <use class="main__icon--close" href="./images/icons.svg#icon-close-black"></use>
+                    </svg>
+                </button>
+                <div class="main__wrapper is-open" id="main-container" data-menu>
+                    <nav class="main__nav">
+                        <ul class="main__list">
+                            <li class="main__item"><a class="main__link main__link--active" href="./index.html">Cтудия</a></li>
+                            <li class="main__item"><a class="main__link" href="./portfolio.html">Портфолио</a></li>
+                            <li class="main__item"><a class="main__link" href="">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <ul class="main__list main__list--contact">
+                        <li class="main__item main__item--contact"><a class="main__link main__link--grey" href="mailto:info@devstudio.com">
+                                <svg class="main__icon" width="16" height="12">
+                                    <use href="./images/icons.svg#icon-envelope"></use>
+                                </svg>
+                                info@devstudio.com
+                            </a>
+                        </li>
+                        <li class="main__item main__item--contact"><a class="main__link main__link--grey" href="tel:+380961111111">
+                                <svg class="main__icon" width="10" height="16">
+                                    <use href="./images/icons.svg#icon-smartphone"></use>
+                                </svg>
+                                +38 096 111 11 11
+                            </a>
+                        </li>
                     </ul>
-                </nav>
-                <ul class="main__list main__list--contact">
-                    <li class="main__item main__item--contact"><a class="main__link main__link--grey" href="mailto:info@devstudio.com">
-                            <svg class="main__icon" width="16" height="12">
-                                <use href="./images/icons.svg#icon-envelope"></use>
-                            </svg>
-                            info@devstudio.com
-                        </a>
-                    </li>
-                    <li class="main__item main__item--contact"><a class="main__link main__link--grey" href="tel:+380961111111">
-                            <svg class="main__icon" width="10" height="16">
-                                <use href="./images/icons.svg#icon-smartphone"></use>
-                            </svg>
-                            +38 096 111 11 11
-                        </a></li>
-                </ul>
-            </div>
+                    <div class="main__social">
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </div>
+                </div>
+             </div>
         </div>
     </header>
     <!-- MAIN -->
@@ -481,6 +496,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/burger-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 
