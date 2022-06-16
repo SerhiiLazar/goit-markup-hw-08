@@ -111,6 +111,7 @@
         flex-direction: column-reverse;
         margin-bottom: 64px;
 
+
         @include mq(tablet) {
             margin-bottom: 0;
             flex-direction: column;
@@ -135,7 +136,10 @@
     
 }
 .main__contact {
-
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: space-between;
     @include mq(tablet) {
         margin-left: 80px;
     }

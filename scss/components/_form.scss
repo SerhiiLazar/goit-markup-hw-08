@@ -185,7 +185,9 @@
     margin: 0 auto;
     margin-bottom: 20px;
 
-
+    @include mq(tablet) {
+        width: 100%:
+    }
 }    
 
 
