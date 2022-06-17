@@ -17,14 +17,14 @@
     }
 }
 
-.footer__leftside {
-    @include mq(tablet) {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        margin-bottom: 60px;
-    }
-}
+// .footer__leftside {
+//     @include mq(tablet) {
+//         display: flex;
+//         flex-direction: row;
+//         width: 100%;
+//         margin-bottom: 60px;
+//     }
+// }
 
 .footer__about {
     text-align: center;

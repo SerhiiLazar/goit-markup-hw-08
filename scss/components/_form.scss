@@ -162,6 +162,9 @@
     
     
 }
+.footer__group {
+    margin: 0;
+}
 
 .footer__input>[placeholder] {
     color:rgba( 33, 150, 243, 0.9);
@@ -192,7 +195,7 @@
     margin-bottom: 20px;
 
     @include mq(tablet) {
-        max-width: 450px;
+        max-width: 768px;
         width: 100%;
     }
 }    
