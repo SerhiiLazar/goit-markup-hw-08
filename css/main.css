@@ -1664,8 +1664,6 @@ body {
 }
 
 .content__item {
-  display: block;
-  width: 450px;
   background: var(--white);
   border: 1px solid #EEEEEE;
   margin-bottom: 30px;
@@ -1724,6 +1722,12 @@ body {
 
 .content__wrap {
   padding: 20px 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .content__wrap:nth-child(1) {
+    padding-bottom: 56px;
+  }
 }
 
 .content__tumb {
