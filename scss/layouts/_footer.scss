@@ -11,22 +11,23 @@
     
     @include mq(tablet) {
         display: flex;
-        flex-basis: calc();
-        // flex-direction: column;
-        // align-items: center;   
-        // max-width: 768px; 
+        
+        flex-direction: column;
+        align-items: center;   
+        
     }
     
 }
 
-// .footer__leftside {
-//     @include mq(tablet) {
-//         display: flex;
-//         flex-direction: row;
-//         width: 100%;
-//         margin-bottom: 60px;
-//     }
-// }
+.footer__leftside {
+    @include mq(tablet) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 60px;
+    }
+}
 
 .footer__about {
     text-align: center;
