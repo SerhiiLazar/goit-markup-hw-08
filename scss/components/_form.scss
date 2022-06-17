@@ -149,6 +149,12 @@
 
 .footer__form {
     width: 100%;
+
+    @include mq(tablet) {
+        width: 100%;
+        display: flex;
+        
+    }
     // display: flex;
     // flex-wrap: wrap;
     // flex-direction: column;
@@ -186,7 +192,8 @@
     margin-bottom: 20px;
 
     @include mq(tablet) {
-        width: 100%:
+        max-width: 450px;
+        width: 100%;
     }
 }    
 

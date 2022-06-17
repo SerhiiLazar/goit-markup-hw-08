@@ -20,7 +20,6 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    height: 100%;
     padding: 48px 0;
     padding-left: 40px;
     background-color: var(--white);
@@ -32,11 +31,14 @@
 
     transform: translateX(100%);
     transition: transform 250ms var(--time-function);
-
+    @include mq(mobile) {
+        height: 100%;
+    }
     @include mq(tablet) {
         display: none;
     }
 }
+
 
 .main__wrapper.is-open {
     transform: translateX(0);
@@ -110,6 +112,9 @@
     &--contact {
         flex-direction: column-reverse;
         margin-bottom: 64px;
+        @include mq(mobail-smoll) {
+            margin-bottom: 0;
+        }
 
 
         @include mq(tablet) {
