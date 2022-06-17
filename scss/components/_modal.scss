@@ -47,8 +47,13 @@
         
     }
     @include mq(tablet) { 
-        overflow: none;
-        min-height: 609px;
+        overflow: hidden;
+        height: 609px;
+    }
+    @include mq(desktop) {
+        max-width: 528px;
+        width: 100%;
+        height: 581px;
     }
 }
 

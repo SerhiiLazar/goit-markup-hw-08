@@ -292,8 +292,16 @@ body {
 
 @media screen and (min-width: 768px) {
   .modal {
-    overflow: none;
-    min-height: 609px;
+    overflow: hidden;
+    height: 609px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+    width: 100%;
+    height: 581px;
   }
 }
 
@@ -937,7 +945,8 @@ body {
   top: 0;
   right: -10px;
   height: 22px;
-  border: 1px solid #212121;
+  border: 1px solid var(--favorit);
+  background-color: var(--favorit);
   opacity: 0.2;
 }
 

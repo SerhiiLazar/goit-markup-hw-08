@@ -312,7 +312,8 @@
             top: 0;
             right: -10px;
             height: 22px;
-            border: 1px solid #212121;
+            border: 1px solid var(--favorit);
+            background-color: var(--favorit);
             opacity: 0.2;
             
         }
