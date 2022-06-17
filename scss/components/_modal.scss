@@ -29,7 +29,7 @@
 
 .modal {
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 50%;
     max-width: 450px;
     height: 100%;
@@ -46,8 +46,7 @@
         width: 450px;
         
     }
-    @include mq(tablet) {
-        top: 50%;
+    @include mq(tablet) { 
         overflow: none;
         min-height: 609px;
     }

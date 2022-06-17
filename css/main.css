@@ -267,7 +267,7 @@ body {
 
 .modal {
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 50%;
   max-width: 450px;
   height: 100%;
@@ -292,7 +292,6 @@ body {
 
 @media screen and (min-width: 768px) {
   .modal {
-    top: 50%;
     overflow: none;
     min-height: 609px;
   }
@@ -618,7 +617,6 @@ body {
   }
 }
 
-s
 .main__wrapper.is-open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
