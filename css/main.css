@@ -270,7 +270,8 @@ body {
   top: 60%;
   left: 50%;
   max-width: 450px;
-  min-height: 609px;
+  height: 100%;
+  overflow: scroll;
   background-color: var(--white);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -292,6 +293,7 @@ body {
 @media screen and (min-width: 768px) {
   .modal {
     top: 50%;
+    overflow: none;
     min-height: 609px;
   }
 }
@@ -585,6 +587,7 @@ body {
   padding-left: 40px;
   background-color: var(--white);
   z-index: 999;
+  overflow: scroll;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -615,6 +618,7 @@ body {
   }
 }
 
+s
 .main__wrapper.is-open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
@@ -660,6 +664,11 @@ body {
   border: none;
   background-color: transparent;
   z-index: 10;
+}
+
+.main__btn--burger {
+  top: -2px;
+  right: -8px;
 }
 
 .main__btn:focus, .main__btn:hover {

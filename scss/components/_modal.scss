@@ -32,21 +32,23 @@
     top: 60%;
     left: 50%;
     max-width: 450px;
-    min-height: 609px;
-
+    height: 100%;
+    overflow: scroll;
     background-color: var(--white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-
+    
     
     transform: translate(-50%,-50%) scale(1);
 
     transition: transform 250ms var(--time-function);
     @include mq(mobile) {
         width: 450px;
+        
     }
     @include mq(tablet) {
         top: 50%;
+        overflow: none;
         min-height: 609px;
     }
 }

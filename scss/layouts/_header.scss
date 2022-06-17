@@ -24,6 +24,7 @@
     padding-left: 40px;
     background-color: var(--white);
     z-index: 999;
+    overflow: scroll;
 
     display: flex;
     flex-direction: column;
@@ -37,7 +38,7 @@
     @include mq(tablet) {
         display: none;
     }
-}
+}s
 
 
 .main__wrapper.is-open {
@@ -70,10 +71,15 @@
     border: none;
     background-color: transparent;
     z-index: 10;
+    &--burger {
+        top: -2px;
+        right: -8px;
+    }
     &:focus,
     &:hover {
         fill: var(--active);
     }
+    
     @include mq(tablet) {
         display: none;
     }
@@ -310,6 +316,7 @@
             opacity: 0.2;
             
         }
+
     }
 
     @include mq(tablet) {
