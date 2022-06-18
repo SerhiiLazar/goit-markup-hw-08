@@ -52,7 +52,7 @@
 
     // Фонове зображення для планшету
 
-    @include mq(tablet) {
+    @include mq(tablet-only) {
         background-image: 
         linear-gradient(
         to right, 
