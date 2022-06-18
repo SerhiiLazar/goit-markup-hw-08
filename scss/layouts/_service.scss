@@ -59,7 +59,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
         ),
-        url("../images/background/Header_tab.jpg");
+        url("../images/background/header_tab.jpg");
         
         background-image: 
         linear-gradient(
@@ -67,7 +67,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
         ),
-        -webkit-image-set(url("../images/background/Header_tab.jpg") 1x);
+        -webkit-image-set(url("../images/background/header_tab.jpg") 1x);
 
         @include mq(retina) {
             background-image: 
@@ -76,7 +76,7 @@
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)
             ),
-            url("../images/background/Header_tab@2x.jpg");
+            url("../images/background/header_tab@2x.jpg");
             
             
             
