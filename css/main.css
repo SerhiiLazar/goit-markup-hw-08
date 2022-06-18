@@ -1638,6 +1638,23 @@ body {
   margin-bottom: 50px;
 }
 
+@media screen and (min-width: 768px) {
+  .control {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .control {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .control__item {
   margin-right: 8px;
   margin-bottom: 15px;
@@ -1645,6 +1662,12 @@ body {
 
 .control__item:nth-child(-n + 2) {
   margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .control__item {
+    margin-bottom: 0;
+  }
 }
 
 /* content */

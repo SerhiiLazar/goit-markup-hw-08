@@ -10,7 +10,13 @@
     margin: 0;
     margin-bottom: 50px;
 
-    
+    @include mq(tablet) {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    @include mq(desktop) {
+        justify-content: center;
+    }
 }
 
 .control__item {
@@ -20,6 +26,9 @@
     &:nth-child(-n + 2) {
         margin-bottom: 0;
         
+    }
+    @include mq(tablet) {
+        margin-bottom: 0;
     }
 }
 
