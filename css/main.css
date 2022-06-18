@@ -1694,7 +1694,7 @@ body {
   margin-bottom: 15px;
 }
 
-.control__item:nth-child(-n + 2) {
+.control__item:nth-last-child(-n + 2) {
   margin-bottom: 0;
 }
 

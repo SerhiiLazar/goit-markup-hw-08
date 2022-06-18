@@ -10,6 +10,7 @@
     margin: 0;
     margin-bottom: 40px;
 
+
     @include mq(tablet) {
         justify-content: center;
         margin-bottom: 30px;
@@ -24,10 +25,10 @@
     margin-right: 8px;
     margin-bottom: 15px;
     
-    &:nth-child(-n + 2) {
+    &:nth-last-child(-n + 2) {
         margin-bottom: 0;
-        
     }
+    
     @include mq(tablet) {
         margin-bottom: 0;
     }
