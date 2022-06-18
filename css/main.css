@@ -959,7 +959,7 @@ body {
 .social-burger__item {
   padding-right: 10px;
   padding-left: 10px;
-  border-right: 1px solid var(--favorit);
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .social-burger__item:last-child {
