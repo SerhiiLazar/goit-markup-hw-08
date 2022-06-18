@@ -28,10 +28,13 @@
 
 .inform__item {
     margin-bottom: 30px;    
-
+    &:last-child {
+        margin-bottom: 0;
+    }
     @include mq(tablet) {
         flex-basis: calc((100% - 4 * 15px) / 2);
         margin: 15px;
+        
         
     }
 
@@ -39,7 +42,6 @@
         flex-basis: calc((100% - 30px) / 4);
         margin-bottom: 0;
         margin: 15px;
-        
     }
 }    
     
@@ -55,12 +57,12 @@
     height: 120px;
     margin-bottom: 30px;
 
-    // @include mq(tablet) {
-    //     max-width: 354px;
-    // }
-    // @include mq(desktop) {
-    //     max-width: 270px;
-    // }
+    @include mq(tablet) {
+        max-width: 354px;
+    }
+    @include mq(desktop) {
+        max-width: 270px;
+    }
 }
 
 .inform__title {
