@@ -957,11 +957,18 @@ body {
 }
 
 .social-burger__item {
-  padding-right: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-right: 1px solid var(--favorit);
 }
 
 .social-burger__item:last-child {
   padding-right: 0;
+  border-right: none;
+}
+
+.social-burger__item:nth-child(1) {
+  padding-left: 0px;
 }
 
 .social-burger__link {
@@ -971,17 +978,11 @@ body {
   letter-spacing: 0.02em;
   color: var(--active);
   position: relative;
+  border-right: 1px solid var(--favorit);
 }
 
-.social-burger__link::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: -10px;
-  height: 22px;
-  border: 1px solid var(--favorit);
-  background-color: var(--favorit);
-  opacity: 0.2;
+.social-burger__link:last-child {
+  border-right: none;
 }
 
 @media screen and (min-width: 768px) {
