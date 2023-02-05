@@ -8,7 +8,7 @@ $("#formValidation").validate({
             email:true
         },
         phone:{
-            number:true,
+            phone:true,
             minlength:10,
             maxlength:13
         }
