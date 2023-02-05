@@ -221,5 +221,13 @@
     }
 }    
 
+// Validation Error
 
+label.error {
+    font-weight: 700;
+    display: block;
+    color: #f00;
+    font-size: 14px;
+    margin-top: 3px;
+}
         

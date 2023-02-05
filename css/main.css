@@ -603,6 +603,14 @@ body {
   }
 }
 
+label.error {
+  font-weight: 700;
+  display: block;
+  color: #f00;
+  font-size: 14px;
+  margin-top: 3px;
+}
+
 /* HEADER */
 .header {
   border-bottom: 1px solid var(--header-border);
