@@ -19,8 +19,14 @@ $("#formValidation").validate({
             required: "Please enter your name",
             minlength: "Name at least 2 characters" 
         },
-        email:"Please enter your Email",
-        phone:"Please enter your Phone"
+        email:{
+            required: "Please enter your Email",
+        },
+        phone:{
+            required:"Please enter your Phone",
+            minlength:"Name at least 10 characters"
+        }
+        
     },
 
 
